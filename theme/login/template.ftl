@@ -60,7 +60,7 @@
              class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
         </#if>
         <#if properties.logoURL?has_content>
-        <div class="logo" style="background:url('${properties.logoURL!}') no-repeat;background-position: center;background-size:${properties.logoWidth!} ${properties.logoHeight!}"></div>
+        <div class="logo" style="background:url('${properties.logoURL!}') no-repeat;background-position: center;height:${properties.logoHeight!};background-size:${properties.logoWidth!} ${properties.logoHeight!}"></div>
         </#if>
     </div>
     <div class="${properties.kcFormCardClass!}">
