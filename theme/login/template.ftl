@@ -58,6 +58,18 @@
         <#if properties.CSIRTButtonText?has_content>
         color: ${properties.CSIRTButtonText!};
         </#if>
+        font-weight: bold;
+        font-family: 'Montserrat', 'Roboto', sans-serif;
+    }
+    #social-NCSIRT {
+        <#if properties.CSIRTButtonBackground?has_content>
+        background-color:${properties.CSIRTButtonBackground!};
+        </#if>
+        <#if properties.CSIRTButtonText?has_content>
+        color: ${properties.CSIRTButtonText!};
+        </#if>
+        font-weight: bold;
+        font-family: 'Montserrat', 'Roboto', sans-serif;
     }
     #social-Constituents {
         <#if properties.ConstituentButtonBackground?has_content>
@@ -66,6 +78,8 @@
         <#if properties.ConstituentButtonText?has_content>
         color: ${properties.ConstituentButtonText!};
         </#if>
+        font-weight: bold;
+        font-family: 'Montserrat', 'Roboto', sans-serif;
     }
     <#if properties.TitleColor?has_content>
     #kc-header-wrapper {    
@@ -80,7 +94,7 @@
     }
     </#if>
     <#if properties.backgroundColor?has_content>
-    body {
+    .login-pf body {
         background: ${properties.backgroundColor!};
     }
     </#if>
@@ -89,6 +103,11 @@
         background: ${properties.buttonColor!};
     }
     </#if>
+    <#if properties.BoxWidth?has_content>
+    .card-pf {
+        max-width: ${properties.BoxWidth!};
+    }
+    </#if>   
     </style>
 </head>
 
