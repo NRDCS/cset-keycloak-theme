@@ -89,8 +89,8 @@
     <#if properties.logoURL?has_content>
     .logo {
         height: ${properties.logoHeight!};
-        background-color: ${properties.logoWidth!};
-        background: url('${properties.logoURL!}') no-repeat;
+        background:url('${properties.logoURL!}') no-repeat;
+        background-size:${properties.logoWidth!} ${properties.logoHeight!}
     }
     </#if>
     <#if properties.backgroundColor?has_content>
