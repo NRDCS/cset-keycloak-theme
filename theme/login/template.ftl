@@ -50,6 +50,16 @@
           "${url.ssoLoginInOtherTabsUrl?no_esc}"
         );
     </script>
+    <style>
+    #social-CSIRT {
+        background-color:${properties.CSIRTButtonBackground!};
+        color: ${properties.CSIRTButtonText!};
+    }
+    #social-Constituents {
+        background-color:${properties.ConstituentButtonBackground!};
+        color: ${properties.ConstituentButtonText!};
+    }
+    </style>
 </head>
 
 <body class="${properties.kcBodyClass!}" style="background:${properties.backgroundColor!}">
