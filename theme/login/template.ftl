@@ -99,7 +99,7 @@
     }
     </#if>
     <#if properties.buttonColor?has_content>
-    #kc-form-buttons {
+    .pf-c-button.pf-m-primary {
         background: ${properties.buttonColor!};
     }
     </#if>
@@ -107,8 +107,10 @@
     .card-pf {
         max-width: ${properties.BoxWidth!};
     }
-    </#if>   
+    </#if>
+       
     </style>
+    
 </head>
 
 <body class="${properties.kcBodyClass!}">
