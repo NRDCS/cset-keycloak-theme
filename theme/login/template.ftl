@@ -52,17 +52,47 @@
     </script>
     <style>
     #social-CSIRT {
+        <#if properties.CSIRTButtonBackground?has_content>
         background-color:${properties.CSIRTButtonBackground!};
+        </#if>
+        <#if properties.CSIRTButtonText?has_content>
         color: ${properties.CSIRTButtonText!};
+        </#if>
     }
     #social-Constituents {
+        <#if properties.ConstituentButtonBackground?has_content>
         background-color:${properties.ConstituentButtonBackground!};
+        </#if>
+        <#if properties.ConstituentButtonText?has_content>
         color: ${properties.ConstituentButtonText!};
+        </#if>
     }
+    <#if properties.TitleColor?has_content>
+    #kc-header-wrapper {    
+        color: ${properties.TitleColor!};
+    }
+    </#if>
+    <#if properties.logoURL?has_content>
+    .logo {
+        height: ${properties.logoHeight!};
+        background-color: ${properties.logoWidth!};
+        background: url('${properties.logoURL!}') no-repeat;
+    }
+    </#if>
+    <#if properties.backgroundColor?has_content>
+    body {
+        background: ${properties.backgroundColor!};
+    }
+    </#if>
+    <#if properties.buttonColor?has_content>
+    #kc-form-buttons {
+        background: ${properties.buttonColor!};
+    }
+    </#if>
     </style>
 </head>
 
-<body class="${properties.kcBodyClass!}" style="background:${properties.backgroundColor!}">
+<body class="${properties.kcBodyClass!}">
 <div class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
         <#if !properties.showTitle?? || properties.showTitle == "true">
@@ -70,7 +100,7 @@
              class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
         </#if>
         <#if properties.logoURL?has_content>
-        <div class="logo" style="background:url('${properties.logoURL!}') no-repeat;background-position: center;height:${properties.logoHeight!};background-size:${properties.logoWidth!} ${properties.logoHeight!}"></div>
+        <div class="logo"></div>
         </#if>
     </div>
     <div class="${properties.kcFormCardClass!}">
