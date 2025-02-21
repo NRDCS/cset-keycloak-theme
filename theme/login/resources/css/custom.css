@@ -144,8 +144,8 @@
   }
 
   .pf-c-button.pf-m-primary {
-    color:var(--pf-c-button--m-primary--Color);
-    background-color:#242578;
+    /* color:var(--pf-c-button--m-primary--Color); */
+    /* background-color:#242578; */
     border-radius: 5px;
     font-family: 'Montserrat', 'Roboto', sans-serif;
     text-transform: uppercase;
