@@ -52,7 +52,7 @@
     </script>
 </head>
 
-<body class="${properties.kcBodyClass!} style="background:"${properties.backgroundColor!}">
+<body class="${properties.kcBodyClass!}" style="background:${properties.backgroundColor!}">
 <div class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
         <#if !properties.showTitle?? || properties.showTitle == "true">
