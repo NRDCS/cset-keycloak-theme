@@ -114,6 +114,35 @@
     text-align: center;
   }
 
+  @media (max-width: 768px) {
+    .card-pf {
+      max-width: 550px;
+    }
+    .socialbutton {
+      font-size: 12px;
+      font-weight: normal;
+    }
+    .h2, h2 {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 515px) {
+    .card-pf {
+      max-width: 550px;
+    }
+    .socialbutton {
+      font-size: 12px;
+      font-weight: normal;
+      float: right;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .h2, h2 {
+      font-size: 16px;
+    }
+  }
+
   .pf-c-button.pf-m-primary {
     color:var(--pf-c-button--m-primary--Color);
     background-color:#242578;
