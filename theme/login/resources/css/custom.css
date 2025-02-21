@@ -75,15 +75,10 @@
   background-size: 16px 80px;
 }
 .logo {
-
   width: 600px;
-  /* height: 97px; */
-  /* background-color: #242578; */
-  /* background: url('https://ncsirt.gov.mn/static/webs/ncsirt/assets/logo.png') no-repeat; */
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-size: auto;
-  background-size: 236px 97px;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
   background-position: center;
   margin: 30px auto;
   margin-bottom: 0px;
@@ -101,7 +96,6 @@
 #kc-header-wrapper {
   color: #ffffffa6;
   margin-bottom: 20px;
-  /* display: none; */
 }
 
 .socialbutton {
@@ -110,7 +104,6 @@
     margin-right: 20px;
     margin-left: 20px;
     background: red;
-    /* border-radius: 3px; */
     padding: 15px 22px 15px 22px;
     font-size: 14px;
     background-color: rgba(255,255,255,0.27);
@@ -136,41 +129,10 @@
     height: 40px;
   }
   
-
-/* #social-CSIRT {
-    background-color: #242578;
-    color: white
-}
-#social-Constituents {
-    background-color: #6365f3;
-    color: white
-} */
 h2 {
     text-align: center;
     padding-bottom: 15px;
 }
 
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-  font-family: Open Sans;
-}
-body {
-  background: hsl(86, 85%, 95%);
-}
 
-.login-pf body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  /* color: #3d475a; */
-  /* background: #1c1c3c; */
-    background-size: auto;
-  font-size: 16px;
-
-}
